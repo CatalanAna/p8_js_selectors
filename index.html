@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p8_js-selector</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".luna").click(function(){
+                $(".luna").hide();
+            });
+            $(".sol").click(function(){
+                $(".luna").show();
+            });
+        });
+    </script>
+    <style>
+        .luna{
+            position: absolute;
+            top: 0;
+             height: auto;
+             width: 70%;
+         }
+         #lunita{
+             width: 15%;
+             height: auto;
+         }
+         .sol{
+             width: 100%;
+             height: auto;
+         }
+         #solecito{
+             width: 70%;
+             height: auto;
+         }
+    </style>
+</head>
+<body>
+    <div id="solecito">
+    <img class="sol" src="img/curiosidades-sol.jpg" alt="">
+    </div>
+    <div id="lunita">
+    <img class="luna" src="img/Full_Moon_Luc_Viatour.jpg" alt="">
+    </div>
+</body>
+</html>
